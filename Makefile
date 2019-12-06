@@ -6,7 +6,7 @@
 #    By: goosterl <marvin@codam.nl>                   +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/10/28 14:03:10 by goosterl      #+#    #+#                  #
-#    Updated: 2019/11/30 19:07:33 by goosterl      ########   odam.nl          #
+#    Updated: 2019/12/04 13:26:41 by goosterl      ########   odam.nl          #
 #                                                                              #
 #******************************************************************************#
 
@@ -27,7 +27,7 @@ SRC = 	ft_strlen.c 		ft_toupper.c 		ft_tolower.c	\
 		ft_strdup.c			ft_substr.c			ft_strjoin.c	\
 		ft_strtrim.c		ft_putchar_fd.c		ft_putstr_fd.c	\
 		ft_split.c			ft_itoa.c			ft_putnbr_fd.c	\
-		ft_strmapi.c		ft_putendl_fd.c		ft_isspace.c
+		ft_strmapi.c		ft_putendl_fd.c
 
 BON = 	ft_lstnew_bonus.c		ft_lstadd_front_bonus.c			\
 		ft_lstsize_bonus.c		ft_lstlast_bonus.c				\
@@ -60,3 +60,5 @@ fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
+
+.PHONY: all bonus clean fclean re

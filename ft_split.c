@@ -6,7 +6,7 @@
 /*   By: goosterl <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/11/29 16:42:11 by goosterl      #+#    #+#                 */
-/*   Updated: 2019/11/29 19:07:51 by goosterl      ########   odam.nl         */
+/*   Updated: 2019/12/02 20:04:14 by goosterl      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ static char		**ft_write(char *str, char **split, char c, int words)
 		}
 		x++;
 		i += j;
-		while (str[i] == c)
+		while (str[i] == c && str[i] != '\0')
 			i++;
 	}
 	split[words] = NULL;

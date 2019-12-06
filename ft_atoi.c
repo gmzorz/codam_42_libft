@@ -6,11 +6,19 @@
 /*   By: goosterl <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/10/28 15:00:36 by goosterl      #+#    #+#                 */
-/*   Updated: 2019/12/02 13:49:49 by goosterl      ########   odam.nl         */
+/*   Updated: 2019/12/02 20:23:19 by goosterl      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static	int	ft_isspace(int c)
+{
+	c = (unsigned char)c;
+	if ((c >= 9 && c <= 13) || c == 32)
+		return (1);
+	return (0);
+}
 
 int			ft_atoi(const char *str)
 {
